@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Image from "./image"
+import {Link} from "gatsby"
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -20,8 +21,6 @@ const StyledHeader = styled.h1`
   padding: 0 2vw;
   margin: 1vh 0vw;
 
-  font-family: "Courier New";
-  font-style: normal;
   font-weight: bold;
   font-size: 14pt;
   text-align: center;

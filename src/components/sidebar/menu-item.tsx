@@ -6,7 +6,7 @@ const Container = styled.li`
   text-align: center;
 `
 
-const StyledSpan = styled.span`
+const StyledLink = styled(Link)`
   font-family: "Courier New";
   font-size: 12pt;
   text-transform: uppercase;
@@ -21,15 +21,9 @@ interface IMenuItemProps {
 const MenuItem = (props: IMenuItemProps) => {
   return (
     <Container>
-      <Link to={props.to} style={{textDecorationColor: "black"}}>
-        {document.title.split(" ")[0] === props.pageName ? (
-          <StyledSpan>
-            <b>{props.pageName}</b>
-          </StyledSpan>
-        ) : (
-          <StyledSpan>{props.pageName}</StyledSpan>
-        )}
-      </Link>
+      <StyledLink to={props.to} activeStyle={{ fontWeight: "bold" }}>
+        {props.pageName}
+      </StyledLink>
     </Container>
   )
 }

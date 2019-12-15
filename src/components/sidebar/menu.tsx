@@ -16,7 +16,7 @@ export default () => {
   return (
     <MenuContainer>
       <MenuList>
-        <MenuItem pageName="About" to="/about/" />
+        <MenuItem pageName="About" to="" />
         <MenuItem pageName="Education" to="/education/" />
         <MenuItem pageName="Experience" to="/experience/" />
         <MenuItem pageName="Projects" to="/projects/" />

@@ -1,9 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter TypeScript`,
+    title: `Zachary Mohling`,
     description:
-        `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@andykenward`,
+        `My personal website and interactive résumé`,
+    author: "Zachary Mohling",
+    menuLinks: [
+      {
+        "name": "About",
+        "link": "/"
+      },
+      {
+        "name": "Education",
+        "link": "/education"
+      },
+      {
+        "name": "Experience",
+        "link": "/experience"
+      },
+      {
+        "name": "Projects",
+        "link": "/projects"
+      },
+      {
+        "name": "Contact",
+        "link": "/contact"
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`, {

@@ -5,16 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Helmet from "react-helmet"
 
-const AboutPage: React.FC = () => (
+const ProjectsPage: React.FC = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Projects" />
     <Helmet>
-        <title>About</title>
+        <title>Projects</title>
     </Helmet>
 
-    <h1>About</h1>
+    <h1>Projects</h1>
 
   </Layout>
 )
 
-export default AboutPage
+export default ProjectsPage

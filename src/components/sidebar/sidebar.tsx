@@ -25,7 +25,6 @@ const Sidebar: React.FC = () => {
       <Container>
         <Profile />
         <Menu />
-        {/* <h2>{props.currPage}</h2> */}
       </Container>
     </>
   )
