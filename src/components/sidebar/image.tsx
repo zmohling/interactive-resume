@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import GatsbyImage, { FluidObject } from "gatsby-image"
 import React from "react"
 import { oc } from "ts-optchain"
-import { ImageQueryQuery } from "../graphqlTypes"
+import { ImageQueryQuery } from "../../graphqlTypes"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -18,7 +18,7 @@ import { ImageQueryQuery } from "../graphqlTypes"
 const Image: React.FC = () => {
   const data: ImageQueryQuery = useStaticQuery(graphql`
     query ImageQuery {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "gatsby-icon.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
