@@ -3,10 +3,6 @@ import styled from "styled-components"
 import Profile from './profile'
 import Menu from './menu'
 
-interface ISidebarProps {
-  currPage: string
-}
-
 const Container = styled.div`
   position: fixed;
   height: 100vh;
@@ -23,7 +19,7 @@ const Container = styled.div`
   z-index: 100;
 `
 
-const Sidebar: React.FC<ISidebarProps> = (props: ISidebarProps) => {
+const Sidebar: React.FC = () => {
   return (
     <>
       <Container>

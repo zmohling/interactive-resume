@@ -17,21 +17,6 @@ interface ILayoutProps {
   children: ReactNode
 }
 
-const useSiteTitle = () => {
-  const data: SiteTitleQueryQuery = useStaticQuery(
-    graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
-  return oc(data).site.siteMetadata.title("")
-}
-
 const AppWrapper = styled.div`
   height: 100vh;
   max-height: 100vh;
@@ -58,12 +43,11 @@ const ContentContainer = styled.div`
 `
 
 export default (props: ILayoutProps) => {
-  const title = useSiteTitle()
 
   return (
     <>
       <AppWrapper>
-        <Sidebar currPage={title} />
+        <Sidebar />
         <MainContainer>
           <ContentContainer>
           <main>{props.children}</main>
